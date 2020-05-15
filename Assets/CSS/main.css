@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+header {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    border: solid 2px blue;
+}
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+nav {
+    height: 64px;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border: solid 2px purple;
+}
+.sec {
+    margin: 16px;
+    border: solid 2px pink;
+}
+#img-logo {
+    width: 56px;
+    display: flex;
+    border: solid 2px fuchsia;
+}
