@@ -5,32 +5,41 @@
 body {
     margin: 0;
 }
+/* Header */
 header {
+    height: 110px;
     width: 100%;
-    overflow: hidden;
     display: flex;
-    border: solid 2px blue;
+    justify-content: space-between;
+    align-items: center;
 }
-.wrapper {
+.container {
     width: 90%;
     max-width: 1000px;
     margin: auto;
-    overflow: hidden;
 }
 nav {
-    height: 64px;
-    background-color: aqua;
-    margin: auto;
     display: flex;
     align-items: center;
-    border: solid 2px purple;
+}
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .sec {
     margin: 16px;
-    border: solid 2px pink;
 }
 #img-logo {
-    width: 56px;
+    width: 80px;
+}
+/* Sección intro */
+.intro {
     display: flex;
-    border: solid 2px fuchsia;
+    justify-content: center;
+    align-items: center;
+}
+#img-adrivette {
+    width: 80%;
+    height: 35vw;
 }
