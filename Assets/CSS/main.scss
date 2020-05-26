@@ -5,6 +5,7 @@
 * {
     font-family: 'Muli', sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     margin: 0;
@@ -56,6 +57,10 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    @media only screen and (max-width: 768px) {
+    height: 60vw;
+    }
 }
 #img-adrivette {
     width: 100%;
@@ -68,6 +73,21 @@ nav {
     justify-content: center;
     align-items: center;
 }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    @media only screen and (max-width: 600px) {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    }
+  }  
+  .card {
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
 /* Footer */
 .footer {
     height: 35vw;

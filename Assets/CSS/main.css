@@ -6,6 +6,7 @@
 * {
   font-family: "Muli", sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -67,6 +68,12 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    height: 60vw;
+  }
 }
 
 #img-adrivette {
@@ -80,6 +87,25 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
 
 /* Footer */
