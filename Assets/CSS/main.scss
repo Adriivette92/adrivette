@@ -22,6 +22,64 @@ a:hover {
     border-bottom: 0.1em dashed $pink;
     padding-bottom: .1em;
 }
+#menu button {
+    background-color:transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+}
+#menu button span {
+    border-radius: 5px;
+    background-color: black;
+    display: block;
+    width: 80%;
+    margin: 4px auto;
+    height: 2px;
+
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Menu animation */
+#menu button.open .topline {
+    animation-name: top-line-animation;
+}
+#menu button.open .middle {
+    animation-name: middle-animation;
+}
+#menu button.open .bottom {
+    animation-name: bottom-animation;
+}
+#menu button .topline {
+    animation-name: top-line-animation-close;
+}
+#menu button .middle {
+    animation-name: middle-animation-close;
+}
+#menu button .bottom {
+    animation-name: bottom-animation-close;
+}
+
+@keyframes top-line-animation{
+    50%, 100% {
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+}
+@keyframes bottom-line-animation{
+    50%, 100% {
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+}
+@keyframes middle-line-animation{
+    20%, 100% {
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+}
 /* Header */
 header {
     height: 110px;
